@@ -1,0 +1,2 @@
+command D:\Programs\Arduino\hardware\tools\avr\bin\avrdude.exe
+ARG -U lfuse:w:0xe2:m -U hfuse:w:0xdf:m -e -v -pattiny85 -carduino -PCOM4 -b19200 -D -Uflash:w:"$(ProjectDir)Debug\$(TargetName).hex":i -C"D:\Programs\Arduino\hardware\tools\avr\etc\avrdude.conf"
